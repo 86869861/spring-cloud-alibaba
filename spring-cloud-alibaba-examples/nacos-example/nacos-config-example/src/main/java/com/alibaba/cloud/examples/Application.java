@@ -32,6 +32,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -42,6 +43,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author xiaojing, Jianwei Mao
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 public class Application {
 
 	public static void main(String[] args) {
